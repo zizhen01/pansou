@@ -283,4 +283,4 @@ func GenerateCacheKeyLegacy(query string, filters map[string]string) string {
 	// 计算MD5哈希
 	hash := md5.Sum([]byte(keyStr))
 	return hex.EncodeToString(hash[:])
-} 
+}

@@ -347,7 +347,7 @@ func (c *DiskCache) Clear() error {
 	c.currSize = 0
 
 	return nil
-} 
+}
 
 // GetLastModified 获取缓存项的最后修改时间
 func (c *DiskCache) GetLastModified(key string) (time.Time, bool) {
@@ -360,4 +360,4 @@ func (c *DiskCache) GetLastModified(key string) (time.Time, bool) {
 	}
 
 	return meta.LastModified, true
-} 
+}

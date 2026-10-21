@@ -100,4 +100,4 @@ func (s *JSONSerializer) Serialize(v interface{}) ([]byte, error) {
 // Deserialize 反序列化数据
 func (s *JSONSerializer) Deserialize(data []byte, v interface{}) error {
 	return DeserializeWithPool(data, v)
-} 
+}
